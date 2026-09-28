@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".AvanzadaActivity">
+
+    <TextView
+        android:id="@+id/txResultado"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textAlignment="viewEnd"
+        android:textColor="#0000FF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:text="88.88" />
+
+    <LinearLayout
+        android:id="@+id/fila1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="7"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="8"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="9"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnBarra"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesOperacionesFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonOperacionPulsar"
+            android:text="/"
+            android:textColor="@color/botonesOperacionesTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fila2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="4"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="5"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="6"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesOperacionesFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonOperacionPulsar"
+            android:text="*"
+            android:textColor="@color/botonesOperacionesTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fila3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="1"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="2"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="3"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnMenos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesOperacionesFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonOperacionPulsar"
+            android:text="-"
+            android:textColor="@color/botonesOperacionesTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fila4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBorrarTodo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesOtrosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="limpiar"
+            android:text="C"
+            android:textColor="@color/botonesOtrosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesNumerosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonNumeroPulsar"
+            android:text="0"
+            android:textColor="@color/botonesNumerosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnDecimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesOtrosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonDecimal"
+            android:text=","
+            android:textColor="@color/botonesOtrosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnMas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesOperacionesFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonOperacionPulsar"
+            android:text="+"
+            android:textColor="@color/botonesOperacionesTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fila5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRetroceso"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesOtrosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonRetroceso"
+            android:text="↩️"
+            android:textColor="@color/botonesOtrosTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnUltimoResultado"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/botonesOtrosFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonUltimoResultado"
+            android:text="ANS"
+            android:textColor="@color/botonesOtrosTexto"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btnIgual"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:backgroundTint="@color/botonesOperacionesFondo"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="botonIgual"
+            android:text="="
+            android:textColor="@color/botonesOperacionesTexto"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+</LinearLayout>
