@@ -15,6 +15,8 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '21'
-          distribution: 'adopt'
+          distribution: 'temurin'
+      - name: Grant execute permission for Gradle Wrapper
+        run: chmod +x ./gradlew
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build   
